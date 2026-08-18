@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://cj12ksrk1ahh2"]
+
+[ext_resource type="Script" uid="uid://cnwij4y3rnbbu" path="res://Components/Finite State Machine/FiniteStateMachine.cs" id="1_bi27m"]
+
+[node name="FiniteStateMachine" type="Node" unique_id=367527313]
+script = ExtResource("1_bi27m")
