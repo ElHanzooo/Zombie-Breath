@@ -28,6 +28,8 @@
 [ext_resource type="Texture2D" uid="uid://coql0q0j2s2rd" path="res://Characters/Mike/Assets/Sprites/Up Shoot/Up Shoot 1.svg" id="26_uvxg5"]
 [ext_resource type="Texture2D" uid="uid://briksgfmgtt0f" path="res://Characters/Mike/Assets/Sprites/Up Shoot/Up Shoot 2.svg" id="27_il6wp"]
 [ext_resource type="Texture2D" uid="uid://b4yt7uy7rqug3" path="res://Characters/Mike/Assets/Sprites/Up Shoot/Up Shoot 3.svg" id="28_0ixf2"]
+[ext_resource type="Script" uid="uid://cnwij4y3rnbbu" path="res://Components/Finite State Machine/FiniteStateMachine.cs" id="29_cq52k"]
+[ext_resource type="Script" uid="uid://bo1ddnckcg1he" path="res://Characters/Mike/States/Idle.cs" id="30_cq52k"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_raakg"]
 animations = [{
@@ -154,7 +156,18 @@ script = ExtResource("1_wgo6q")
 [node name="Animations" type="AnimatedSprite2D" parent="." unique_id=988855078]
 sprite_frames = SubResource("SpriteFrames_raakg")
 animation = &"Idle"
+frame = 5
+frame_progress = 0.54834694
 
 [node name="Hitbox" type="CollisionShape2D" parent="." unique_id=208915432]
 position = Vector2(-184, 4)
 shape = SubResource("CapsuleShape2D_raakg")
+
+[node name="FiniteStateMachine" type="Node" parent="." unique_id=931814820 node_paths=PackedStringArray("InitialState")]
+script = ExtResource("29_cq52k")
+InitialState = NodePath("Idle")
+metadata/_custom_type_script = "uid://cnwij4y3rnbbu"
+
+[node name="Idle" type="Node" parent="FiniteStateMachine" unique_id=1899724176]
+script = ExtResource("30_cq52k")
+metadata/_custom_type_script = "uid://cvt5rhtesosbx"
