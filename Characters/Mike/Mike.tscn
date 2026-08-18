@@ -30,6 +30,7 @@
 [ext_resource type="Texture2D" uid="uid://b4yt7uy7rqug3" path="res://Characters/Mike/Assets/Sprites/Up Shoot/Up Shoot 3.svg" id="28_0ixf2"]
 [ext_resource type="Script" uid="uid://cnwij4y3rnbbu" path="res://Components/Finite State Machine/FiniteStateMachine.cs" id="29_cq52k"]
 [ext_resource type="Script" uid="uid://bo1ddnckcg1he" path="res://Characters/Mike/States/Idle.cs" id="30_cq52k"]
+[ext_resource type="Script" uid="uid://j3qw2hse6w2a" path="res://Characters/Mike/States/Shoot.cs" id="31_u53qn"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_raakg"]
 animations = [{
@@ -168,6 +169,11 @@ script = ExtResource("29_cq52k")
 InitialState = NodePath("Idle")
 metadata/_custom_type_script = "uid://cnwij4y3rnbbu"
 
-[node name="Idle" type="Node" parent="FiniteStateMachine" unique_id=1899724176]
+[node name="Idle" type="Node" parent="FiniteStateMachine" unique_id=1899724176 node_paths=PackedStringArray("ShootState")]
 script = ExtResource("30_cq52k")
+ShootState = NodePath("../Shoot")
+metadata/_custom_type_script = "uid://cvt5rhtesosbx"
+
+[node name="Shoot" type="Node" parent="FiniteStateMachine" unique_id=1007972517]
+script = ExtResource("31_u53qn")
 metadata/_custom_type_script = "uid://cvt5rhtesosbx"
