@@ -16,6 +16,18 @@ public partial class FiniteStateMachine : Node
         }
     }
 
+    public override void _Process(double delta)
+    {
+        if (ActiveState != null)
+            ActiveState.Update(delta);
+    }
+
+    public override void _PhysicsProcess(double delta)
+    {
+        if (ActiveState != null)
+            ActiveState.PhysicsUpdate(delta);
+    }
+
     public void ChangeState(State newState)
     {
         if (newState == ActiveState)
