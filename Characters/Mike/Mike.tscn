@@ -151,7 +151,6 @@ radius = 76.0
 height = 336.0
 
 [node name="Mike" type="Area2D" unique_id=1196164354]
-position = Vector2(640, 360)
 scale = Vector2(0.25, 0.25)
 script = ExtResource("1_wgo6q")
 

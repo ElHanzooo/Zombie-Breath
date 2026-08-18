@@ -3,13 +3,16 @@ using System;
 
 public partial class Shoot : State
 {
-	// Called when the node enters the scene tree for the first time.
-	public override void _Ready()
-	{
-	}
+    [Export] private State IdleState { get; set; }
 
-	// Called every frame. 'delta' is the elapsed time since the previous frame.
-	public override void _Process(double delta)
-	{
-	}
+    private AnimatedSprite2D animations;
+
+    public override void _Ready()
+    {
+        animations = GetNode<AnimatedSprite2D>("../../Animations");
+
+        animations.AnimationFinished += () => EmitSignal(SignalName.SwitchState, IdleState);
+    }
+
+    public override void Enter() => animations.Play("Shoot");
 }
