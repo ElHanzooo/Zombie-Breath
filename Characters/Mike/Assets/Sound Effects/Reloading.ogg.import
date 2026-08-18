@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b3axiidm37y3c"
+path="res://.godot/imported/Reloading.ogg-5e66ad0160b71c32046c019238641299.oggvorbisstr"
+
+[deps]
+
+source_file="res://Characters/Mike/Assets/Sound Effects/Reloading.ogg"
+dest_files=["res://.godot/imported/Reloading.ogg-5e66ad0160b71c32046c019238641299.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://vc68ms2ti0t3"
+path="res://.godot/imported/Aim.ogg-2b80d088de5e25a6e0f1c6a474bcac6a.oggvorbisstr"
+
+[deps]
+
+source_file="res://Characters/Mike/Assets/Sound Effects/Aim.ogg"
+dest_files=["res://.godot/imported/Aim.ogg-2b80d088de5e25a6e0f1c6a474bcac6a.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
