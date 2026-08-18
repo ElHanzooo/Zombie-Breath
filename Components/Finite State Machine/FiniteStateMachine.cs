@@ -12,9 +12,9 @@ public partial class FiniteStateMachine : Node
     public override void _Ready()
     {
         foreach (State state in GetChildren().Cast<State>())
-        {
             state.Connect(State.SignalName.SwitchState, Callable.From<State>(ChangeState));
-        }
+
+        ChangeState(InitialState);
     }
 
     public override void _Process(double delta)
