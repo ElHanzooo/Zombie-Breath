@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://n8bmkm42l77b"
+path="res://.godot/imported/Shoot.ogg-fc9ebd154eb96dde0f59cb5aa20c31ac.oggvorbisstr"
+
+[deps]
+
+source_file="res://Characters/Mike/Assets/Sound Effects/Shoot.ogg"
+dest_files=["res://.godot/imported/Shoot.ogg-fc9ebd154eb96dde0f59cb5aa20c31ac.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
