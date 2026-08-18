@@ -16,5 +16,9 @@ public partial class FiniteStateMachine : Node
         }
     }
 
-    public void ChangeState(State newState) { }
+    public void ChangeState(State newState)
+    {
+        if (newState == ActiveState)
+            return;
+    }
 }
