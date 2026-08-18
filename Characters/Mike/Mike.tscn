@@ -151,6 +151,7 @@ radius = 76.0
 height = 336.0
 
 [node name="Mike" type="Area2D" unique_id=1196164354]
+position = Vector2(640, 360)
 scale = Vector2(0.25, 0.25)
 script = ExtResource("1_wgo6q")
 
@@ -174,6 +175,7 @@ script = ExtResource("30_cq52k")
 ShootState = NodePath("../Shoot")
 metadata/_custom_type_script = "uid://cvt5rhtesosbx"
 
-[node name="Shoot" type="Node" parent="FiniteStateMachine" unique_id=1007972517]
+[node name="Shoot" type="Node" parent="FiniteStateMachine" unique_id=1007972517 node_paths=PackedStringArray("IdleState")]
 script = ExtResource("31_u53qn")
+IdleState = NodePath("../Idle")
 metadata/_custom_type_script = "uid://cvt5rhtesosbx"
