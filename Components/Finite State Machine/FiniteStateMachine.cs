@@ -20,5 +20,13 @@ public partial class FiniteStateMachine : Node
     {
         if (newState == ActiveState)
             return;
+
+        if (ActiveState != null)
+            ActiveState.Exit();
+
+        ActiveState = newState;
+
+        if (ActiveState != null)
+            ActiveState.Enter();
     }
 }
