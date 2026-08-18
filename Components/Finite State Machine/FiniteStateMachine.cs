@@ -1,5 +1,6 @@
 using Godot;
 using System;
+using System.Linq;
 
 [GlobalClass]
 public partial class FiniteStateMachine : Node
@@ -10,7 +11,7 @@ public partial class FiniteStateMachine : Node
 
     public override void _Ready()
     {
-        foreach (State state in GetChildren())
+        foreach (State state in GetChildren().Cast<State>())
         {
             state.Connect(State.SignalName.SwitchState, Callable.From<State>(ChangeState));
         }
@@ -18,14 +19,12 @@ public partial class FiniteStateMachine : Node
 
     public override void _Process(double delta)
     {
-        if (ActiveState != null)
-            ActiveState.Update(delta);
+        ActiveState?.Update(delta);
     }
 
     public override void _PhysicsProcess(double delta)
     {
-        if (ActiveState != null)
-            ActiveState.PhysicsUpdate(delta);
+        ActiveState?.PhysicsUpdate(delta);
     }
 
     public void ChangeState(State newState)
@@ -33,12 +32,10 @@ public partial class FiniteStateMachine : Node
         if (newState == ActiveState)
             return;
 
-        if (ActiveState != null)
-            ActiveState.Exit();
+        ActiveState?.Exit();
 
         ActiveState = newState;
 
-        if (ActiveState != null)
-            ActiveState.Enter();
+        ActiveState?.Enter();
     }
 }
