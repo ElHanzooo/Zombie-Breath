@@ -32,6 +32,7 @@
 [ext_resource type="Script" uid="uid://dfucs85w042q4" path="res://Characters/Mike/States/Idle.cs" id="30_cq52k"]
 [ext_resource type="Script" uid="uid://ywclxx8i7ml0" path="res://Characters/Mike/States/Shoot.cs" id="31_u53qn"]
 [ext_resource type="Script" uid="uid://drace77fe6vy3" path="res://Characters/Mike/States/Reloading.cs" id="32_e0l64"]
+[ext_resource type="Script" uid="uid://dxss1ukf4xqtn" path="res://Characters/Mike/States/Hit.cs" id="33_ptsro"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_raakg"]
 animations = [{
@@ -152,15 +153,14 @@ radius = 76.0
 height = 336.0
 
 [node name="Mike" type="Area2D" unique_id=1196164354]
-position = Vector2(640, 360)
 scale = Vector2(0.25, 0.25)
 script = ExtResource("1_wgo6q")
 
 [node name="Animations" type="AnimatedSprite2D" parent="." unique_id=988855078]
 sprite_frames = SubResource("SpriteFrames_raakg")
-animation = &"Idle"
-frame = 5
-frame_progress = 0.54834694
+animation = &"Hit"
+frame = 4
+frame_progress = 1.0
 
 [node name="Hitbox" type="CollisionShape2D" parent="." unique_id=208915432]
 position = Vector2(-184, 4)
@@ -171,10 +171,11 @@ script = ExtResource("29_cq52k")
 InitialState = NodePath("Idle")
 metadata/_custom_type_script = "uid://cnwij4y3rnbbu"
 
-[node name="Idle" type="Node" parent="FiniteStateMachine" unique_id=1899724176 node_paths=PackedStringArray("ShootState", "ReloadingState")]
+[node name="Idle" type="Node" parent="FiniteStateMachine" unique_id=1899724176 node_paths=PackedStringArray("ShootState", "ReloadingState", "HitState")]
 script = ExtResource("30_cq52k")
 ShootState = NodePath("../Shoot")
 ReloadingState = NodePath("../Reloading")
+HitState = NodePath("../Hit")
 
 [node name="Shoot" type="Node" parent="FiniteStateMachine" unique_id=1007972517 node_paths=PackedStringArray("IdleState")]
 script = ExtResource("31_u53qn")
@@ -182,5 +183,10 @@ IdleState = NodePath("../Idle")
 
 [node name="Reloading" type="Node" parent="FiniteStateMachine" unique_id=1098283542 node_paths=PackedStringArray("IdleState")]
 script = ExtResource("32_e0l64")
+IdleState = NodePath("../Idle")
+metadata/_custom_type_script = "uid://blke3331gy4k3"
+
+[node name="Hit" type="Node" parent="FiniteStateMachine" unique_id=1461931522 node_paths=PackedStringArray("IdleState")]
+script = ExtResource("33_ptsro")
 IdleState = NodePath("../Idle")
 metadata/_custom_type_script = "uid://blke3331gy4k3"
