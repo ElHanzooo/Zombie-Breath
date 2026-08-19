@@ -29,8 +29,9 @@
 [ext_resource type="Texture2D" uid="uid://briksgfmgtt0f" path="res://Characters/Mike/Assets/Sprites/Up Shoot/Up Shoot 2.svg" id="27_il6wp"]
 [ext_resource type="Texture2D" uid="uid://b4yt7uy7rqug3" path="res://Characters/Mike/Assets/Sprites/Up Shoot/Up Shoot 3.svg" id="28_0ixf2"]
 [ext_resource type="Script" uid="uid://cnwij4y3rnbbu" path="res://Components/Finite State Machine/FiniteStateMachine.cs" id="29_cq52k"]
-[ext_resource type="Script" uid="uid://bo1ddnckcg1he" path="res://Characters/Mike/States/Idle.cs" id="30_cq52k"]
-[ext_resource type="Script" uid="uid://j3qw2hse6w2a" path="res://Characters/Mike/States/Shoot.cs" id="31_u53qn"]
+[ext_resource type="Script" uid="uid://dfucs85w042q4" path="res://Characters/Mike/States/Idle.cs" id="30_cq52k"]
+[ext_resource type="Script" uid="uid://ywclxx8i7ml0" path="res://Characters/Mike/States/Shoot.cs" id="31_u53qn"]
+[ext_resource type="Script" uid="uid://drace77fe6vy3" path="res://Characters/Mike/States/Reloading.cs" id="32_e0l64"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_raakg"]
 animations = [{
@@ -151,6 +152,7 @@ radius = 76.0
 height = 336.0
 
 [node name="Mike" type="Area2D" unique_id=1196164354]
+position = Vector2(640, 360)
 scale = Vector2(0.25, 0.25)
 script = ExtResource("1_wgo6q")
 
@@ -169,12 +171,16 @@ script = ExtResource("29_cq52k")
 InitialState = NodePath("Idle")
 metadata/_custom_type_script = "uid://cnwij4y3rnbbu"
 
-[node name="Idle" type="Node" parent="FiniteStateMachine" unique_id=1899724176 node_paths=PackedStringArray("ShootState")]
+[node name="Idle" type="Node" parent="FiniteStateMachine" unique_id=1899724176 node_paths=PackedStringArray("ShootState", "ReloadingState")]
 script = ExtResource("30_cq52k")
 ShootState = NodePath("../Shoot")
-metadata/_custom_type_script = "uid://cvt5rhtesosbx"
+ReloadingState = NodePath("../Reloading")
 
 [node name="Shoot" type="Node" parent="FiniteStateMachine" unique_id=1007972517 node_paths=PackedStringArray("IdleState")]
 script = ExtResource("31_u53qn")
 IdleState = NodePath("../Idle")
-metadata/_custom_type_script = "uid://cvt5rhtesosbx"
+
+[node name="Reloading" type="Node" parent="FiniteStateMachine" unique_id=1098283542 node_paths=PackedStringArray("IdleState")]
+script = ExtResource("32_e0l64")
+IdleState = NodePath("../Idle")
+metadata/_custom_type_script = "uid://blke3331gy4k3"
