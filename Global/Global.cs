@@ -14,7 +14,7 @@ public partial class Global : Node
             Stream = sfx
         };
 
-        audioStreamPlayer.Finished += () => QueueFree();
+        audioStreamPlayer.Finished += () => audioStreamPlayer.QueueFree();
         
         AddChild(audioStreamPlayer);
 
