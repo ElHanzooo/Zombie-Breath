@@ -3,14 +3,13 @@ using System;
 
 public partial class Idle : State
 {
-    [Export] private State ShootState { get; set; }
-    [Export] private State ReloadingState { get; set; }
+    [Export] private AnimationManager AnimationManager { get; set; } = null!;
 
-    private AnimatedSprite2D animations;
+    [ExportGroup("States")]
+    [Export] private State ShootState { get; set; } = null!;
+    [Export] private State ReloadingState { get; set; } = null!;
 
-    public override void _Ready() => animations = GetNode<AnimatedSprite2D>("../../Animations");
-
-    public override void Enter() => animations.Play("Idle");
+    public override void Enter() => AnimationManager.AddAnimation("Idle");
 
     public override void Update(double delta)
     {
