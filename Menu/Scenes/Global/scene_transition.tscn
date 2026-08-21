@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://rlaxk47h2y07"]
+
+[ext_resource type="Script" uid="uid://fj2n6p6t4q1d" path="res://Menu/Scripts/Global/Scene Transition/SceneChanger.cs" id="1_u6dyr"]
+[ext_resource type="Script" uid="uid://dct6ycy57x0o" path="res://Menu/Scripts/Global/Scene Transition/FadeEffect.cs" id="2_gh8xu"]
+
+[node name="SceneTransition" type="CanvasLayer" unique_id=782101248 node_paths=PackedStringArray("_transitionNode")]
+process_mode = 3
+script = ExtResource("1_u6dyr")
+_transitionNode = NodePath("FadeRect")
+
+[node name="FadeRect" type="ColorRect" parent="." unique_id=510341128]
+modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.003921569, 0.003921569, 0.003921569, 1)
+script = ExtResource("2_gh8xu")

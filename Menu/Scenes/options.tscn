@@ -1,0 +1,296 @@
+[gd_scene format=3 uid="uid://b0x07cptb4kwc"]
+
+[ext_resource type="Script" uid="uid://bbv4sjoisgxc7" path="res://Menu/Scripts/Options/Options.cs" id="1_3avan"]
+[ext_resource type="Texture2D" uid="uid://bq356whuyke22" path="res://Menu/Sprites/Options/background.svg" id="1_ymca2"]
+[ext_resource type="Texture2D" uid="uid://ch66a5r42pd2k" path="res://Menu/Sprites/Options/mike.svg" id="2_0o6lk"]
+[ext_resource type="Shader" uid="uid://d2tvwtopmv5ig" path="res://Materials/shadow.gdshader" id="3_6ib4n"]
+[ext_resource type="Texture2D" uid="uid://doyinf67a1cuu" path="res://Menu/Sprites/Options/zombie.svg" id="3_vbeui"]
+[ext_resource type="Script" uid="uid://d0d0hwsjpr5k8" path="res://Menu/Scripts/General/ButtonsHandler.cs" id="5_vbeui"]
+[ext_resource type="Script" uid="uid://q888oofyn36c" path="res://Menu/Scripts/General/GenericUIAnimation.cs" id="7_3o08m"]
+[ext_resource type="Texture2D" uid="uid://c63hft5ao8osn" path="res://Menu/Sprites/Main Menu/Buttons/exit.svg" id="7_6ib4n"]
+[ext_resource type="Script" uid="uid://c8bkyicuwyv06" path="res://Menu/Scripts/Options/Buttons Actions/BackAction.cs" id="9_r1em2"]
+[ext_resource type="AudioStream" uid="uid://cysy7f6mbrw6j" path="res://Menu/SFX/Tittle Menu/startfast.mp3" id="10_6ib4n"]
+[ext_resource type="AudioStream" uid="uid://ckqvptgwlijas" path="res://Menu/SFX/Main Menu/hover.ogg" id="11_6ib4n"]
+[ext_resource type="AudioStream" uid="uid://da6146rcprxt" path="res://Menu/SFX/Main Menu/error.ogg" id="12_mmxd2"]
+[ext_resource type="AudioStream" uid="uid://b11f8pnqrvdf" path="res://Menu/Musics/options.mp3" id="13_mmxd2"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_3o08m"]
+shader = ExtResource("3_6ib4n")
+shader_parameter/offset = Vector2(10, 5)
+shader_parameter/shadow_color = Color(0, 0, 0, 0.5019608)
+shader_parameter/blur_amount = 1.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_0gsxk"]
+shader = ExtResource("3_6ib4n")
+shader_parameter/offset = Vector2(10, 5)
+shader_parameter/shadow_color = Color(0, 0, 0, 0.5)
+shader_parameter/blur_amount = 1.0
+
+[sub_resource type="Animation" id="Animation_6ib4n"]
+resource_name = "In"
+length = 1.2
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Mike:position:y")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(2, 0),
+"points": PackedFloat32Array(440, 0, 0, 0.36666667, -317.73608, 78, -0.19999999, 5.611664, 0.13333333, 0.7801285),
+"times": PackedFloat32Array(0, 1)
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Mike:position:x")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [20.0]
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Zombie:position:y")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0, 2),
+"points": PackedFloat32Array(460, 0, 0, 0.30333334, -269.28937, 111, -0.30000007, 2.4061127, 0.16653705, -1.3356894),
+"times": PackedFloat32Array(0.13, 1.2)
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Zombie:position:x")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [730.0]
+}
+
+[sub_resource type="Animation" id="Animation_80jsr"]
+resource_name = "Out"
+length = 1.2
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Mike:position:y")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(2, 2),
+"points": PackedFloat32Array(78, -0.028084777, -33.06437, 0.16666667, 196.21762, 440, -0.8, -156.46536, 0, 0),
+"times": PackedFloat32Array(0, 1)
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Mike:position:x")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [20.0]
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Zombie:position:y")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0, 2),
+"points": PackedFloat32Array(111, -0.25, 0, 0.27, 186.51013, 460, -0.73333335, -146.51785, 0, 0),
+"times": PackedFloat32Array(0.13, 1.2)
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Zombie:position:x")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [730.0]
+}
+
+[sub_resource type="Animation" id="Animation_mmxd2"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Mike:position:y")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(78, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Zombie:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(111, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Zombie:position:x")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [730.0]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Mike:position:x")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [20.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_80jsr"]
+_data = {
+&"In": SubResource("Animation_6ib4n"),
+&"Out": SubResource("Animation_80jsr"),
+&"RESET": SubResource("Animation_mmxd2")
+}
+
+[node name="Options" type="Control" unique_id=1678191070]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3avan")
+
+[node name="Background" type="TextureRect" parent="." unique_id=2050949046]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 640.0
+offset_bottom = 360.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.667, 0.667)
+texture = ExtResource("1_ymca2")
+
+[node name="Mike" type="TextureRect" parent="." unique_id=644837596]
+material = SubResource("ShaderMaterial_3o08m")
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 20.0
+offset_top = -642.0
+offset_right = 737.0
+offset_bottom = 0.00024414063
+grow_vertical = 0
+scale = Vector2(0.55, 0.55)
+pivot_offset = Vector2(0, 642)
+texture = ExtResource("2_0o6lk")
+flip_h = true
+
+[node name="Zombie" type="TextureRect" parent="." unique_id=1945991204]
+material = SubResource("ShaderMaterial_0gsxk")
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -550.0
+offset_top = -609.0
+offset_right = -75.0
+offset_bottom = 0.00012207031
+grow_horizontal = 0
+grow_vertical = 0
+scale = Vector2(0.55, 0.55)
+pivot_offset = Vector2(475, 609)
+texture = ExtResource("3_vbeui")
+
+[node name="ButtonsHandler" type="Control" parent="." unique_id=1789059019 node_paths=PackedStringArray("_clickSFX", "_hoverSFX", "_errorSFX")]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("5_vbeui")
+_clickSFX = NodePath("ClickSFX")
+_hoverSFX = NodePath("HoverSFX")
+_errorSFX = NodePath("ErrorSFX")
+
+[node name="Back" type="TextureButton" parent="ButtonsHandler" unique_id=35849356 groups=["MenuButtons"]]
+layout_mode = 1
+offset_left = -80.0
+offset_top = -90.0
+offset_right = 215.0
+offset_bottom = 346.0
+scale = Vector2(0.29, 0.29)
+pivot_offset = Vector2(147, 155)
+texture_normal = ExtResource("7_6ib4n")
+texture_pressed = ExtResource("7_6ib4n")
+texture_hover = ExtResource("7_6ib4n")
+texture_disabled = ExtResource("7_6ib4n")
+texture_focused = ExtResource("7_6ib4n")
+script = ExtResource("7_3o08m")
+HoverValues = Dictionary[String, Variant]({
+"scale": Vector2(0.32, 0.32)
+})
+DefaultValues = Dictionary[String, Variant]({
+"scale": Vector2(0.29, 0.29)
+})
+metadata/Description = ""
+metadata/Disabled = false
+
+[node name="Action" type="Node" parent="ButtonsHandler/Back" unique_id=1666662601 node_paths=PackedStringArray("animationPlayer")]
+script = ExtResource("9_r1em2")
+animationPlayer = NodePath("../../../AnimationPlayer")
+
+[node name="ClickSFX" type="AudioStreamPlayer" parent="ButtonsHandler" unique_id=1731443665]
+stream = ExtResource("10_6ib4n")
+
+[node name="HoverSFX" type="AudioStreamPlayer" parent="ButtonsHandler" unique_id=1237341909]
+stream = ExtResource("11_6ib4n")
+
+[node name="ErrorSFX" type="AudioStreamPlayer" parent="ButtonsHandler" unique_id=1274346408]
+stream = ExtResource("12_mmxd2")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=686963178]
+stream = ExtResource("13_mmxd2")
+volume_db = -3.0
+autoplay = true
+parameters/looping = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1121155919]
+libraries/ = SubResource("AnimationLibrary_80jsr")
+autoplay = &"In"

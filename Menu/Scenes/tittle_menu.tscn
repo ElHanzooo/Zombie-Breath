@@ -1,0 +1,722 @@
+[gd_scene format=3 uid="uid://dgwhwcvfrpgqj"]
+
+[ext_resource type="Script" uid="uid://cmugq7hd5bqxv" path="res://Menu/Scripts/Tittle Menu/TittleMenu.cs" id="1_4t1td"]
+[ext_resource type="Texture2D" uid="uid://bejgd7ftbxc4s" path="res://Menu/Sprites/Tittle Menu/Background/4.png" id="1_revhq"]
+[ext_resource type="Shader" uid="uid://b0dgjpgmca0ck" path="res://Menu/Materials/Bright.gdshader" id="2_4kjr2"]
+[ext_resource type="Texture2D" uid="uid://c6dikidbi5ift" path="res://Menu/Sprites/Tittle Menu/Background/6.png" id="2_efsn5"]
+[ext_resource type="Script" uid="uid://d32tvek7jdk11" path="res://Menu/Scripts/General/RedBackground.cs" id="2_ssyll"]
+[ext_resource type="Texture2D" uid="uid://bg1ftv7ydfvuf" path="res://Menu/Sprites/Tittle Menu/Background/10.png" id="3_v5v8a"]
+[ext_resource type="Texture2D" uid="uid://dyvdmhff3gtcj" path="res://Menu/Sprites/Tittle Menu/Background/5.png" id="4_4t1td"]
+[ext_resource type="Texture2D" uid="uid://noccbro6qq6r" path="res://Menu/Sprites/Tittle Menu/Background/1.png" id="5_y1dot"]
+[ext_resource type="Texture2D" uid="uid://dy4xyk8i5odvr" path="res://Menu/Sprites/Tittle Menu/Background/8.png" id="6_kl3ro"]
+[ext_resource type="Texture2D" uid="uid://lr6op0mklk5b" path="res://Menu/Sprites/Tittle Menu/Background/2.png" id="7_3vvlo"]
+[ext_resource type="Texture2D" uid="uid://cl2k78apl55aw" path="res://Menu/Sprites/Tittle Menu/Background/7.png" id="8_xpm64"]
+[ext_resource type="Texture2D" uid="uid://gnv2ak2cnaqf" path="res://Menu/Sprites/Tittle Menu/Background/9.png" id="9_slt58"]
+[ext_resource type="Texture2D" uid="uid://cvwya4i4wjgna" path="res://Menu/Sprites/Tittle Menu/Background/3.png" id="10_iuc6r"]
+[ext_resource type="Texture2D" uid="uid://lww01y7qgy3u" path="res://Menu/Sprites/Tittle Menu/Black Background.png" id="11_ldacs"]
+[ext_resource type="Texture2D" uid="uid://bpgsxrrhqgxsu" path="res://Menu/Sprites/Tittle Menu/Characters/Mike.png" id="11_v5v8a"]
+[ext_resource type="Texture2D" uid="uid://r1ssnqfxo3fc" path="res://Menu/Sprites/Tittle Menu/Characters/Zombie.png" id="12_4t1td"]
+[ext_resource type="Texture2D" uid="uid://b6d07eklg1ufg" path="res://Menu/Sprites/Tittle Menu/Logo.png" id="12_xxhgw"]
+[ext_resource type="Script" uid="uid://dm24diag38h3q" path="res://Menu/Scripts/Tittle Menu/Character.cs" id="14_i78tc"]
+[ext_resource type="Texture2D" uid="uid://cu47h051wd2of" path="res://Menu/Sprites/Tittle Menu/Characters/Eyes/MikeEyes1.svg" id="15_7l13i"]
+[ext_resource type="Texture2D" uid="uid://dvbs7qjh2bxj3" path="res://Menu/Sprites/Tittle Menu/Characters/Zombie Bungee.png" id="15_ssyll"]
+[ext_resource type="Texture2D" uid="uid://ydyajv6ob6x3" path="res://Menu/Sprites/Tittle Menu/Characters/Skeleton.png" id="16_4kjr2"]
+[ext_resource type="FontFile" uid="uid://cief05lqa4qc2" path="res://Menu/Fonts/impact.ttf" id="16_51cot"]
+[ext_resource type="Texture2D" uid="uid://i1xsvqn4jujs" path="res://Menu/Sprites/Tittle Menu/Characters/Eyes/MikeEyes2.svg" id="16_fuf2t"]
+[ext_resource type="Texture2D" uid="uid://cxr0q7yny8cbh" path="res://Menu/Sprites/Tittle Menu/Characters/Eyes/MikeEyes3.svg" id="17_ku41o"]
+[ext_resource type="Script" uid="uid://dlmth68k0wmic" path="res://Menu/Scripts/Tittle Menu/CharaConfig.cs" id="17_ofovc"]
+[ext_resource type="Texture2D" uid="uid://sgskbg2smx3n" path="res://Menu/Sprites/Tittle Menu/Button/ENTER.svg" id="18_dt7la"]
+[ext_resource type="Texture2D" uid="uid://d12xryqkwio3s" path="res://Menu/Sprites/Tittle Menu/Characters/Eyes/MikeEyes4.svg" id="18_kr3rw"]
+[ext_resource type="Texture2D" uid="uid://b6ornq1xepkkv" path="res://Menu/Sprites/Tittle Menu/Button/ENTER CLICK.svg" id="19_51cot"]
+[ext_resource type="AudioStream" uid="uid://cysy7f6mbrw6j" path="res://Menu/SFX/Tittle Menu/startfast.mp3" id="19_dt7la"]
+[ext_resource type="Texture2D" uid="uid://bucgoim8aqbc" path="res://Menu/Sprites/Tittle Menu/Characters/Eyes/ZombieEyes.svg" id="24_fuf2t"]
+[ext_resource type="Texture2D" uid="uid://clbefvq01bink" path="res://Menu/Sprites/Tittle Menu/Characters/Eyes/BungeesEyes.svg" id="25_ku41o"]
+[ext_resource type="Texture2D" uid="uid://c3pv2n03s5ab5" path="res://Menu/Sprites/Tittle Menu/Characters/Eyes/SkeletonEyes1.svg" id="26_kr3rw"]
+[ext_resource type="Texture2D" uid="uid://dlvouj84e4nyy" path="res://Menu/Sprites/Tittle Menu/Characters/Eyes/SkeletonEyes2.svg" id="27_4gl8c"]
+[ext_resource type="Texture2D" uid="uid://pq1rvg8ltedy" path="res://Menu/Sprites/Tittle Menu/Characters/Eyes/SkeletonEyes3.svg" id="28_6hb2q"]
+[ext_resource type="Texture2D" uid="uid://hkra56kvjgyr" path="res://Menu/Sprites/Tittle Menu/Characters/Eyes/SkeletonEyes4.svg" id="29_sof0s"]
+[ext_resource type="Script" uid="uid://d0d0hwsjpr5k8" path="res://Menu/Scripts/General/ButtonsHandler.cs" id="32_44w1w"]
+[ext_resource type="Script" uid="uid://q888oofyn36c" path="res://Menu/Scripts/General/GenericUIAnimation.cs" id="36_mqdtb"]
+[ext_resource type="Shader" uid="uid://c1tv0m8rgc8kc" path="res://Menu/Materials/Saturation.gdshader" id="37_6hb2q"]
+[ext_resource type="Script" uid="uid://4jhuter1d06d" path="res://Menu/Scripts/Tittle Menu/Buttons Actions/StartAction.cs" id="37_44w1w"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_4kjr2"]
+shader = ExtResource("2_4kjr2")
+shader_parameter/bright = 0.0
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_vmyal"]
+frames = 10
+frame_0/texture = ExtResource("1_revhq")
+frame_0/duration = 0.1
+frame_1/texture = ExtResource("2_efsn5")
+frame_1/duration = 0.1
+frame_2/texture = ExtResource("3_v5v8a")
+frame_2/duration = 0.1
+frame_3/texture = ExtResource("4_4t1td")
+frame_3/duration = 0.1
+frame_4/texture = ExtResource("5_y1dot")
+frame_4/duration = 0.1
+frame_5/texture = ExtResource("6_kl3ro")
+frame_5/duration = 0.1
+frame_6/texture = ExtResource("7_3vvlo")
+frame_6/duration = 0.1
+frame_7/texture = ExtResource("8_xpm64")
+frame_7/duration = 0.1
+frame_8/texture = ExtResource("9_slt58")
+frame_8/duration = 0.1
+frame_9/texture = ExtResource("10_iuc6r")
+frame_9/duration = 0.1
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ofovc"]
+shader = ExtResource("2_4kjr2")
+shader_parameter/bright = 4.7499999933364734e-08
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_nf33t"]
+frames = 4
+one_shot = true
+speed_scale = 0.0
+frame_0/texture = ExtResource("15_7l13i")
+frame_1/texture = ExtResource("16_fuf2t")
+frame_1/duration = 1.0
+frame_2/texture = ExtResource("17_ku41o")
+frame_2/duration = 1.0
+frame_3/texture = ExtResource("18_kr3rw")
+frame_3/duration = 1.0
+
+[sub_resource type="Resource" id="Resource_ofovc"]
+script = ExtResource("17_ofovc")
+Texture = ExtResource("12_4t1td")
+metadata/_custom_type_script = "uid://dlmth68k0wmic"
+
+[sub_resource type="Resource" id="Resource_8upf4"]
+script = ExtResource("17_ofovc")
+Texture = ExtResource("15_ssyll")
+Scale = Vector2(1.84, 1.84)
+Pivot = Vector2(-68, 470)
+metadata/_custom_type_script = "uid://dlmth68k0wmic"
+
+[sub_resource type="Resource" id="Resource_1x8q0"]
+script = ExtResource("17_ofovc")
+Texture = ExtResource("16_4kjr2")
+Pivot = Vector2(0, -40)
+metadata/_custom_type_script = "uid://dlmth68k0wmic"
+
+[sub_resource type="Resource" id="Resource_fuf2t"]
+script = ExtResource("17_ofovc")
+Texture = ExtResource("24_fuf2t")
+Scale = Vector2(0.9, 0.9)
+Pivot = Vector2(85, 0)
+metadata/_custom_type_script = "uid://dlmth68k0wmic"
+
+[sub_resource type="Resource" id="Resource_kr3rw"]
+script = ExtResource("17_ofovc")
+Texture = ExtResource("25_ku41o")
+Scale = Vector2(0.9, 0.9)
+Pivot = Vector2(85, 960)
+metadata/_custom_type_script = "uid://dlmth68k0wmic"
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_44w1w"]
+frames = 4
+speed_scale = 2.0
+frame_0/texture = ExtResource("26_kr3rw")
+frame_0/duration = 0.2
+frame_1/texture = ExtResource("27_4gl8c")
+frame_1/duration = 0.2
+frame_2/texture = ExtResource("28_6hb2q")
+frame_2/duration = 0.2
+frame_3/texture = ExtResource("29_sof0s")
+frame_3/duration = 0.2
+
+[sub_resource type="Resource" id="Resource_nf33t"]
+script = ExtResource("17_ofovc")
+Texture = SubResource("AnimatedTexture_44w1w")
+Scale = Vector2(0.9, 0.9)
+Pivot = Vector2(180, 50)
+metadata/_custom_type_script = "uid://dlmth68k0wmic"
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_51cot"]
+texture = ExtResource("18_dt7la")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7f851"]
+texture = ExtResource("19_51cot")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_l2cqw"]
+texture = ExtResource("18_dt7la")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_i78tc"]
+texture = ExtResource("19_51cot")
+
+[sub_resource type="InputEventKey" id="InputEventKey_dt7la"]
+device = -1
+keycode = 4194309
+
+[sub_resource type="InputEventKey" id="InputEventKey_51cot"]
+device = -1
+keycode = 4194310
+
+[sub_resource type="Shortcut" id="Shortcut_51cot"]
+events = [SubResource("InputEventKey_dt7la"), SubResource("InputEventKey_51cot")]
+
+[sub_resource type="Animation" id="Animation_v5v8a"]
+resource_name = "Entry"
+length = 2.0
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Logo:position:y")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(580, -0.118956454, 177.63617, 0.23333333, -348.43372, 70, -0.5, 19.309883, 0, 0),
+"times": PackedFloat32Array(0.2, 1.2)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Mike:position:x")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(-650, -0.25, 0, 0.3, 49.88974, -170, -0.8666667, -47.95018, 0, 0),
+"times": PackedFloat32Array(0.3, 1.2)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("ButtonHandler/StartButton:position:y")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(800, -0.03333333, 33.419678, 0.06666666, -133.7804, 603.5, -0.26666665, 22.56958, 0, 0),
+"times": PackedFloat32Array(0.8, 1.2)
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Black:color:a")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [1.0, 0.0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Logo:scale")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.6, 0.6)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Mike:position:y")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [134.0]
+}
+tracks/6/type = "bezier"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Character:position:x")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(1247, -0.25, 0, 0.13333333, -185.11084, 808, -0.4, 12.804, 0, 0),
+"times": PackedFloat32Array(0.3, 1.2)
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Character:position:y")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [71.0]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Mike/MikeEyes:visible")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Character/CharaEyes:visible")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_51cot"]
+resource_name = "Exit"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Mike/MikeEyes:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.02, 0.04, 0.06),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [ExtResource("15_7l13i"), ExtResource("16_fuf2t"), ExtResource("17_ku41o"), ExtResource("18_kr3rw")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Mike/MikeEyes:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Character/CharaEyes:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Black:color:a")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [255.0]
+}
+
+[sub_resource type="Animation" id="Animation_4t1td"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Logo:position:y")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(580, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Character:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(717, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("ButtonHandler/StartButton:position:y")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(800, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Black:color:a")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0.0]
+}
+tracks/4/type = "bezier"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Mike:position:x")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-195, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/5/type = "bezier"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Character:position:x")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(854, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Logo:scale")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.6, 0.6)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Mike:position:y")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [719.0]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Mike/MikeEyes:texture")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [SubResource("AnimatedTexture_nf33t")]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Mike/MikeEyes:visible")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Character/CharaEyes:visible")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_y1dot"]
+_data = {
+&"Entry": SubResource("Animation_v5v8a"),
+&"Exit": SubResource("Animation_51cot"),
+&"RESET": SubResource("Animation_4t1td")
+}
+
+[sub_resource type="VideoStreamTheora" id="VideoStreamTheora_4kjr2"]
+file = "res://Menu/Splash/splash.ogv"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_sof0s"]
+shader = ExtResource("37_6hb2q")
+shader_parameter/activated = false
+shader_parameter/speedOfChange = 10.0
+shader_parameter/minimumSaturation = 0.50000002375
+shader_parameter/maximumSaturation = 1.0000000475
+
+[node name="TittleMenu" type="Control" unique_id=2130431488 node_paths=PackedStringArray("_logo", "_animationPlayer", "_SplashScreen", "_saturationEffect")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_4t1td")
+rotationAmplitude = 0.5
+shakeSpeed = 70.0
+_logo = NodePath("Logo")
+_animationPlayer = NodePath("AnimationPlayer")
+_SplashScreen = NodePath("Splash")
+_saturationEffect = NodePath("CanvasLayer/SaturationEffect")
+
+[node name="Background" type="TextureRect" parent="." unique_id=383344650]
+material = SubResource("ShaderMaterial_4kjr2")
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -358.0
+offset_right = 720.0
+offset_bottom = 362.0
+grow_vertical = 2
+texture = SubResource("AnimatedTexture_vmyal")
+script = ExtResource("2_ssyll")
+ColorsBright = Dictionary[int, float]({
+0: 0.0,
+1: -0.5,
+2: -0.8
+})
+
+[node name="Background2" type="TextureRect" parent="." unique_id=1946085205]
+material = SubResource("ShaderMaterial_ofovc")
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -720.0
+offset_top = -360.0
+offset_bottom = 360.0
+grow_horizontal = 0
+grow_vertical = 2
+texture = SubResource("AnimatedTexture_vmyal")
+script = ExtResource("2_ssyll")
+ColorsBright = Dictionary[int, float]({
+0: 0.0,
+1: -0.5,
+2: -0.8
+})
+
+[node name="Mike" type="TextureRect" parent="." unique_id=1110433560]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = -195.0
+offset_top = -1.0
+offset_right = 151.00037
+offset_bottom = 345.0
+grow_vertical = 0
+scale = Vector2(1.7, 1.7)
+texture = ExtResource("11_v5v8a")
+
+[node name="MikeEyes" type="TextureRect" parent="Mike" unique_id=1510118954]
+visible = false
+z_index = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -65.941376
+offset_top = -56.529404
+offset_right = 94.058624
+offset_bottom = 13.470612
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("AnimatedTexture_nf33t")
+stretch_mode = 5
+
+[node name="Character" type="TextureRect" parent="." unique_id=396173262]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -426.0
+offset_top = -3.0
+offset_right = -43.0
+offset_bottom = 380.0
+grow_horizontal = 0
+grow_vertical = 0
+scale = Vector2(1.7, 1.7)
+texture = ExtResource("12_4t1td")
+script = ExtResource("14_i78tc")
+characterConfigs = Dictionary[int, Variant]({
+0: SubResource("Resource_ofovc"),
+1: SubResource("Resource_8upf4"),
+2: SubResource("Resource_1x8q0")
+})
+
+[node name="CharaEyes" type="TextureRect" parent="Character" unique_id=518694271]
+z_index = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -85.618034
+offset_top = -67.97059
+offset_right = 84.38196
+offset_bottom = 22.029419
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.9, 0.9)
+pivot_offset = Vector2(85, 0)
+texture = ExtResource("24_fuf2t")
+stretch_mode = 4
+script = ExtResource("14_i78tc")
+characterConfigs = Dictionary[int, Variant]({
+0: SubResource("Resource_fuf2t"),
+1: SubResource("Resource_kr3rw"),
+2: SubResource("Resource_nf33t")
+})
+
+[node name="BlackBackground" type="TextureRect" parent="." unique_id=1812270304]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -816.0
+offset_top = -360.0
+offset_right = 816.0
+offset_bottom = 360.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("11_ldacs")
+
+[node name="Logo" type="TextureRect" parent="." unique_id=52862197]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -507.5
+offset_top = 220.0
+offset_right = 507.5
+offset_bottom = 800.00195
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.6, 0.6)
+pivot_offset = Vector2(507.5, 290)
+texture = ExtResource("12_xxhgw")
+
+[node name="ButtonHandler" type="Control" parent="." unique_id=917943900 node_paths=PackedStringArray("_clickSFX")]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("32_44w1w")
+_clickSFX = NodePath("EnterSFX")
+metadata/Disabled = false
+
+[node name="StartButton" type="Button" parent="ButtonHandler" unique_id=999096342 groups=["MenuButtons"]]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -158.0
+offset_top = 440.0
+offset_right = 158.0
+offset_bottom = 530.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("16_51cot")
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxTexture_51cot")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_7f851")
+theme_override_styles/hover = SubResource("StyleBoxTexture_l2cqw")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_i78tc")
+shortcut = SubResource("Shortcut_51cot")
+shortcut_in_tooltip = false
+text = "ENTER"
+script = ExtResource("36_mqdtb")
+
+[node name="Action" type="Node" parent="ButtonHandler/StartButton" unique_id=258702004 node_paths=PackedStringArray("_button", "_animationPlayer", "_saturationEffect")]
+script = ExtResource("37_44w1w")
+_button = NodePath("..")
+_animationPlayer = NodePath("../../../AnimationPlayer")
+_saturationEffect = NodePath("../../../CanvasLayer/SaturationEffect")
+
+[node name="EnterSFX" type="AudioStreamPlayer" parent="ButtonHandler" unique_id=1253140796]
+stream = ExtResource("19_dt7la")
+
+[node name="Black" type="ColorRect" parent="." unique_id=988522022]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 0)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=288191962]
+libraries/ = SubResource("AnimationLibrary_y1dot")
+
+[node name="Splash" type="VideoStreamPlayer" parent="." unique_id=1489505656]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+stream = SubResource("VideoStreamTheora_4kjr2")
+autoplay = true
+expand = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1460828311]
+layer = 10
+
+[node name="SaturationEffect" type="ColorRect" parent="CanvasLayer" unique_id=1378087919]
+material = SubResource("ShaderMaterial_sof0s")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2

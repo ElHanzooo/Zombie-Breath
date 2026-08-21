@@ -1,0 +1,546 @@
+[gd_scene format=3 uid="uid://dt67r64i80gt5"]
+
+[ext_resource type="Texture2D" uid="uid://vinqk1k0w7ug" path="res://Menu/Sprites/Main Menu/Decoration.png" id="1_706j3"]
+[ext_resource type="Texture2D" uid="uid://bpjofbfnprlvh" path="res://Menu/Sprites/Main Menu/Background/Sky/Sky-Day.svg" id="1_dkqay"]
+[ext_resource type="Script" uid="uid://klu1wq4dp00f" path="res://Menu/Scripts/Main Menu/BackgroundHandler.cs" id="1_h5auv"]
+[ext_resource type="Script" uid="uid://bgakibiab8cor" path="res://Menu/Scripts/Main Menu/MainMenu.cs" id="1_ra7ut"]
+[ext_resource type="Texture2D" uid="uid://dpfv4vp12ayjt" path="res://Menu/Sprites/Main Menu/Background/Ocean/ocean_0.png" id="1_uq1xs"]
+[ext_resource type="Texture2D" uid="uid://jc13jv4rt7am" path="res://Menu/Sprites/Main Menu/Background/Boat/boat_0.png" id="1_wtvu0"]
+[ext_resource type="Texture2D" uid="uid://cshp2ur5q63aq" path="res://Menu/Sprites/Main Menu/Background/Boat/boat_1.png" id="2_dkqay"]
+[ext_resource type="Texture2D" uid="uid://cfpoqop2kayg6" path="res://Menu/Sprites/Main Menu/Buttons/campaign.png" id="2_lf5lq"]
+[ext_resource type="Texture2D" uid="uid://bpud4faijrhl2" path="res://Menu/Sprites/Main Menu/Background/Ocean/ocean_1.png" id="2_uunax"]
+[ext_resource type="Texture2D" uid="uid://bla1e0o2b6w6s" path="res://Menu/Sprites/Main Menu/Buttons/campaign_selected.png" id="3_2snn4"]
+[ext_resource type="Texture2D" uid="uid://cx6lrrcsp4qom" path="res://Menu/Sprites/Main Menu/Background/Ocean/ocean_10.png" id="3_f0lw7"]
+[ext_resource type="Script" uid="uid://diavkur8o5eqo" path="res://Menu/Scripts/Main Menu/BGConfig.cs" id="3_hlynp"]
+[ext_resource type="Texture2D" uid="uid://bs5np0o50fr10" path="res://Menu/Sprites/Main Menu/Background/Boat/boat_2.png" id="3_oecam"]
+[ext_resource type="Script" uid="uid://q888oofyn36c" path="res://Menu/Scripts/General/GenericUIAnimation.cs" id="4_2snn4"]
+[ext_resource type="Texture2D" uid="uid://uyfbhglm6tde" path="res://Menu/Sprites/Main Menu/Background/Sky/Sky-Night.svg" id="4_ug7od"]
+[ext_resource type="Texture2D" uid="uid://b7ge1a5gmyrjn" path="res://Menu/Sprites/Main Menu/Buttons/migigames.png" id="4_uq1xs"]
+[ext_resource type="Texture2D" uid="uid://dgx212adxohgj" path="res://Menu/Sprites/Main Menu/Background/Ocean/ocean_11.png" id="4_vs6du"]
+[ext_resource type="Texture2D" uid="uid://y1qw3xqc7jji" path="res://Menu/Sprites/Main Menu/Background/Sun and Moon/Moon.svg" id="5_h5auv"]
+[ext_resource type="Texture2D" uid="uid://h321qwlj38ge" path="res://Menu/Sprites/Main Menu/Buttons/minigames_selected.png" id="5_vqa26"]
+[ext_resource type="Texture2D" uid="uid://bytnncpodjfpk" path="res://Menu/Sprites/Main Menu/Background/Ocean/ocean_12.png" id="5_wtvu0"]
+[ext_resource type="Texture2D" uid="uid://c08cxsbmvs2oh" path="res://Menu/Sprites/Main Menu/Background/Ocean/ocean_13.png" id="6_dkqay"]
+[ext_resource type="Texture2D" uid="uid://orhy0jibdkdo" path="res://Menu/Sprites/Main Menu/Background/Ocean/ocean_14.png" id="7_oecam"]
+[ext_resource type="Texture2D" uid="uid://p7aysk1y3en3" path="res://Menu/Sprites/Main Menu/Background/Ocean/ocean_15.png" id="8_54ljp"]
+[ext_resource type="Texture2D" uid="uid://d2k1y4xc6koik" path="res://Menu/Sprites/Main Menu/Buttons/trophies.png" id="8_s5pnb"]
+[ext_resource type="Texture2D" uid="uid://yphryfa7lt86" path="res://Menu/Sprites/Main Menu/Background/Ocean/ocean_16.png" id="9_3fahj"]
+[ext_resource type="Texture2D" uid="uid://cgtt2nqfl4bd6" path="res://Menu/Sprites/Main Menu/Buttons/trophies_selected.png" id="9_odjf2"]
+[ext_resource type="Texture2D" uid="uid://bb23sfy1bh4g0" path="res://Menu/Sprites/Main Menu/Buttons/options.png" id="10_lf5lq"]
+[ext_resource type="Texture2D" uid="uid://cg0bsnwrnwfv4" path="res://Menu/Sprites/Main Menu/Background/Ocean/ocean_17.png" id="10_xawwi"]
+[ext_resource type="Texture2D" uid="uid://nwlbet2dxbff" path="res://Menu/Sprites/Main Menu/Background/Ocean/ocean_18.png" id="11_7gt5c"]
+[ext_resource type="Texture2D" uid="uid://uxdgfifuun" path="res://Menu/Sprites/Main Menu/Background/Ocean/ocean_19.png" id="12_obnb7"]
+[ext_resource type="Texture2D" uid="uid://bdqmkuif5v4fl" path="res://Menu/Sprites/Main Menu/Background/Ocean/ocean_2.png" id="13_e3j4t"]
+[ext_resource type="Texture2D" uid="uid://u7xbwwbsvmh8" path="res://Menu/Sprites/Main Menu/Background/Ocean/ocean_3.png" id="14_aidj4"]
+[ext_resource type="Texture2D" uid="uid://dyllkphdaynsk" path="res://Menu/Sprites/Main Menu/Background/Ocean/ocean_4.png" id="15_ovbx5"]
+[ext_resource type="Texture2D" uid="uid://grargisf0ddh" path="res://Menu/Sprites/Main Menu/Background/Ocean/ocean_5.png" id="16_hybhr"]
+[ext_resource type="Texture2D" uid="uid://jmqrs728vyiw" path="res://Menu/Sprites/Main Menu/Background/Ocean/ocean_6.png" id="17_r32im"]
+[ext_resource type="Texture2D" uid="uid://dxas3sem552xa" path="res://Menu/Sprites/Main Menu/Background/Ocean/ocean_7.png" id="18_vw3fn"]
+[ext_resource type="Texture2D" uid="uid://rfcfqhr1pk7n" path="res://Menu/Sprites/Main Menu/Background/Ocean/ocean_8.png" id="19_ug7od"]
+[ext_resource type="Texture2D" uid="uid://x2jqly00ac3m" path="res://Menu/Sprites/Main Menu/Background/Ocean/ocean_9.png" id="20_h5auv"]
+[ext_resource type="Texture2D" uid="uid://cy6t40g4c8pox" path="res://Menu/Sprites/Main Menu/Background/Sky/Sky-Aft.svg" id="23_r32im"]
+[ext_resource type="Texture2D" uid="uid://cs2j7k0yte5vx" path="res://Menu/Sprites/Main Menu/Background/Sun and Moon/Sun.svg" id="25_oecam"]
+[ext_resource type="Script" uid="uid://d0d0hwsjpr5k8" path="res://Menu/Scripts/General/ButtonsHandler.cs" id="27_54ljp"]
+[ext_resource type="Script" uid="uid://d0wwof16ve0ve" path="res://Menu/Scripts/Main Menu/Buttons Actions/CampaignAction.cs" id="31_obnb7"]
+[ext_resource type="Script" uid="uid://yl237nb6hh2v" path="res://Menu/Scripts/Main Menu/Buttons Actions/MinigamesAction.cs" id="34_hybhr"]
+[ext_resource type="Script" uid="uid://bixwm0qtrta18" path="res://Menu/Scripts/Main Menu/Buttons Actions/CreditsAction.cs" id="37_r32im"]
+[ext_resource type="AudioStream" uid="uid://ckqvptgwlijas" path="res://Menu/SFX/Main Menu/hover.ogg" id="39_obnb7"]
+[ext_resource type="AudioStream" uid="uid://da6146rcprxt" path="res://Menu/SFX/Main Menu/error.ogg" id="40_e3j4t"]
+[ext_resource type="Script" uid="uid://beot2urrjl252" path="res://Menu/Scripts/Main Menu/Buttons Actions/TrophiesAction.cs" id="40_vw3fn"]
+[ext_resource type="Script" uid="uid://bjdj2in16iled" path="res://Menu/Scripts/Main Menu/Buttons Actions/OptionsAction.cs" id="42_ug7od"]
+[ext_resource type="Texture2D" uid="uid://cftmgso0enlni" path="res://Menu/Sprites/Main Menu/Buttons/credits.png" id="44_acc5a"]
+[ext_resource type="Texture2D" uid="uid://b8bssj5q6ukxu" path="res://Menu/Sprites/Main Menu/Buttons/credits_selected.png" id="45_u01t2"]
+[ext_resource type="AudioStream" uid="uid://cysy7f6mbrw6j" path="res://Menu/SFX/Tittle Menu/startfast.mp3" id="52_acc5a"]
+[ext_resource type="Texture2D" uid="uid://c63hft5ao8osn" path="res://Menu/Sprites/Main Menu/Buttons/exit.svg" id="52_u01t2"]
+[ext_resource type="Script" uid="uid://dgf07d7pog6k7" path="res://Menu/Scripts/Main Menu/Buttons Actions/ExitAction.cs" id="53_58u2v"]
+
+[sub_resource type="Resource" id="Resource_cplnd"]
+script = ExtResource("3_hlynp")
+ControlBackgroundPath = NodePath("Day")
+ModulateColor = Color(1, 1, 1, 1)
+metadata/_custom_type_script = "uid://diavkur8o5eqo"
+
+[sub_resource type="Resource" id="Resource_42vs4"]
+script = ExtResource("3_hlynp")
+ControlBackgroundPath = NodePath("Afternoon")
+ModulateColor = Color(1, 0.64705884, 0.4117647, 1)
+metadata/_custom_type_script = "uid://diavkur8o5eqo"
+
+[sub_resource type="Resource" id="Resource_36j71"]
+script = ExtResource("3_hlynp")
+ControlBackgroundPath = NodePath("Night")
+ModulateColor = Color(0.32941177, 0.47843137, 0.6313726, 1)
+metadata/_custom_type_script = "uid://diavkur8o5eqo"
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_ra7ut"]
+frames = 20
+speed_scale = 1.3
+frame_0/texture = ExtResource("1_uq1xs")
+frame_0/duration = 0.15
+frame_1/texture = ExtResource("2_uunax")
+frame_1/duration = 0.15
+frame_2/texture = ExtResource("13_e3j4t")
+frame_2/duration = 0.15
+frame_3/texture = ExtResource("14_aidj4")
+frame_3/duration = 0.15
+frame_4/texture = ExtResource("15_ovbx5")
+frame_4/duration = 0.15
+frame_5/texture = ExtResource("16_hybhr")
+frame_5/duration = 0.15
+frame_6/texture = ExtResource("17_r32im")
+frame_6/duration = 0.15
+frame_7/texture = ExtResource("18_vw3fn")
+frame_7/duration = 0.15
+frame_8/texture = ExtResource("19_ug7od")
+frame_8/duration = 0.15
+frame_9/texture = ExtResource("20_h5auv")
+frame_9/duration = 0.15
+frame_10/texture = ExtResource("3_f0lw7")
+frame_10/duration = 0.15
+frame_11/texture = ExtResource("4_vs6du")
+frame_11/duration = 0.15
+frame_12/texture = ExtResource("5_wtvu0")
+frame_12/duration = 0.15
+frame_13/texture = ExtResource("6_dkqay")
+frame_13/duration = 0.15
+frame_14/texture = ExtResource("7_oecam")
+frame_14/duration = 0.15
+frame_15/texture = ExtResource("8_54ljp")
+frame_15/duration = 0.15
+frame_16/texture = ExtResource("9_3fahj")
+frame_16/duration = 0.25
+frame_17/texture = ExtResource("10_xawwi")
+frame_17/duration = 0.15
+frame_18/texture = ExtResource("11_7gt5c")
+frame_18/duration = 0.15
+frame_19/texture = ExtResource("12_obnb7")
+frame_19/duration = 0.15
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_54ljp"]
+frames = 3
+speed_scale = 1.3
+frame_0/texture = ExtResource("1_wtvu0")
+frame_0/duration = 0.15
+frame_1/texture = ExtResource("2_dkqay")
+frame_1/duration = 0.15
+frame_2/texture = ExtResource("3_oecam")
+frame_2/duration = 0.15
+
+[sub_resource type="Animation" id="Animation_54ljp"]
+resource_name = "Boat"
+length = 8.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Modulate/Boat:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [1000.0, 920.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Modulate/Boat:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(1, 3, 5, 7),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [0.06981317007977318, -0.06981317007977318, 0.06981317007977318, -0.06981317007977318]
+}
+
+[sub_resource type="Animation" id="Animation_3fahj"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Modulate/Boat:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [884.2915]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Modulate/Boat:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_xawwi"]
+_data = {
+&"Boat": SubResource("Animation_54ljp"),
+&"RESET": SubResource("Animation_3fahj")
+}
+
+[node name="MainMenu" type="Control" unique_id=941986680 node_paths=PackedStringArray("BackgroundHandler")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ra7ut")
+BackgroundHandler = NodePath("Background")
+
+[node name="Background" type="Control" parent="." unique_id=391824983 node_paths=PackedStringArray("NodeModulate")]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_h5auv")
+NodeModulate = NodePath("Modulate")
+Backgrounds = Dictionary[int, ExtResource("3_hlynp")]({
+0: SubResource("Resource_cplnd"),
+1: SubResource("Resource_42vs4"),
+2: SubResource("Resource_36j71")
+})
+
+[node name="Day" type="Control" parent="Background" unique_id=822986393]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Sky" type="TextureRect" parent="Background/Day" unique_id=1958252975]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_dkqay")
+
+[node name="Sun" type="TextureRect" parent="Background/Day" unique_id=406445863]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -222.0
+offset_top = -310.0
+offset_right = -113.0
+offset_bottom = -201.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("25_oecam")
+
+[node name="Afternoon" type="Control" parent="Background" unique_id=644707807]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Sky" type="TextureRect" parent="Background/Afternoon" unique_id=1905961246]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("23_r32im")
+
+[node name="Sun" type="TextureRect" parent="Background/Afternoon" unique_id=1255785847]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 160.0
+offset_top = -213.0
+offset_right = 269.0
+offset_bottom = -104.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("25_oecam")
+
+[node name="Night" type="Control" parent="Background" unique_id=1115888055]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Sky" type="TextureRect" parent="Background/Night" unique_id=495992490]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_ug7od")
+
+[node name="Moon" type="TextureRect" parent="Background/Night" unique_id=1672685253]
+layout_mode = 0
+offset_left = 418.0
+offset_top = 50.0
+offset_right = 527.0
+offset_bottom = 159.0
+texture = ExtResource("5_h5auv")
+
+[node name="Modulate" type="Control" parent="Background" unique_id=1999051142]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Ocean" type="TextureRect" parent="Background/Modulate" unique_id=115071650]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1032.0
+offset_top = -580.0
+grow_horizontal = 0
+grow_vertical = 0
+texture = SubResource("AnimatedTexture_ra7ut")
+
+[node name="Boat" type="TextureRect" parent="Background/Modulate" unique_id=1779726421]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 244.2915
+offset_top = 178.0
+offset_right = 366.2926
+offset_bottom = 257.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(61, 65)
+texture = SubResource("AnimatedTexture_54ljp")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Background/Modulate" unique_id=1648673757]
+root_node = NodePath("../..")
+libraries/ = SubResource("AnimationLibrary_xawwi")
+autoplay = &"Boat"
+
+[node name="Decoration" type="TextureRect" parent="." unique_id=891675891]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -364.0
+offset_right = 1032.0
+offset_bottom = 364.0
+grow_vertical = 2
+texture = ExtResource("1_706j3")
+
+[node name="ButtonsHandler" type="Control" parent="." unique_id=1383450689 node_paths=PackedStringArray("_label", "_clickSFX", "_hoverSFX", "_errorSFX")]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("27_54ljp")
+_label = NodePath("../Label")
+_clickSFX = NodePath("ClickSFX")
+_hoverSFX = NodePath("HoverSFX")
+_errorSFX = NodePath("ErrorSFX")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ButtonsHandler" unique_id=1284550483]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -30.0
+offset_top = -310.5
+offset_right = 375.0
+offset_bottom = 310.5
+grow_vertical = 2
+theme_override_constants/separation = 30
+
+[node name="Campaign" type="TextureButton" parent="ButtonsHandler/VBoxContainer" unique_id=282357352 groups=["MenuButtons"]]
+layout_mode = 2
+texture_normal = ExtResource("2_lf5lq")
+texture_pressed = ExtResource("3_2snn4")
+texture_hover = ExtResource("3_2snn4")
+texture_disabled = ExtResource("2_lf5lq")
+stretch_mode = 3
+script = ExtResource("4_2snn4")
+HoverValues = Dictionary[String, Variant]({
+"position:x": 25.0
+})
+DefaultValues = Dictionary[String, Variant]({
+"position:x": 0.0
+})
+metadata/Description = "Play the main campaign of the game."
+metadata/Disabled = false
+
+[node name="Action" type="Node" parent="ButtonsHandler/VBoxContainer/Campaign" unique_id=45763936]
+script = ExtResource("31_obnb7")
+
+[node name="Minigames" type="TextureButton" parent="ButtonsHandler/VBoxContainer" unique_id=189063826 groups=["MenuButtons"]]
+self_modulate = Color(0.29586652, 0.2958665, 0.2958665, 1)
+layout_mode = 2
+texture_normal = ExtResource("4_uq1xs")
+texture_pressed = ExtResource("5_vqa26")
+texture_hover = ExtResource("5_vqa26")
+texture_disabled = ExtResource("4_uq1xs")
+stretch_mode = 3
+script = ExtResource("4_2snn4")
+HoverValues = Dictionary[String, Variant]({
+"position:x": 25.0
+})
+DefaultValues = Dictionary[String, Variant]({
+"position:x": 0.0
+})
+metadata/Description = "(LOCKED)"
+metadata/Disabled = true
+
+[node name="Action" type="Node" parent="ButtonsHandler/VBoxContainer/Minigames" unique_id=1004103752]
+script = ExtResource("34_hybhr")
+
+[node name="Credits" type="TextureButton" parent="ButtonsHandler/VBoxContainer" unique_id=1109636927 groups=["MenuButtons"]]
+layout_mode = 2
+texture_normal = ExtResource("44_acc5a")
+texture_pressed = ExtResource("45_u01t2")
+texture_hover = ExtResource("45_u01t2")
+texture_disabled = ExtResource("44_acc5a")
+stretch_mode = 3
+script = ExtResource("4_2snn4")
+HoverValues = Dictionary[String, Variant]({
+"position:x": 25.0
+})
+DefaultValues = Dictionary[String, Variant]({
+"position:x": 0.0
+})
+metadata/Description = "View the development team."
+metadata/Disabled = false
+
+[node name="Action" type="Node" parent="ButtonsHandler/VBoxContainer/Credits" unique_id=1536951592]
+script = ExtResource("37_r32im")
+
+[node name="Trophies" type="TextureButton" parent="ButtonsHandler/VBoxContainer" unique_id=1536847389 groups=["MenuButtons"]]
+layout_mode = 2
+texture_normal = ExtResource("8_s5pnb")
+texture_pressed = ExtResource("9_odjf2")
+texture_hover = ExtResource("9_odjf2")
+texture_disabled = ExtResource("8_s5pnb")
+stretch_mode = 3
+script = ExtResource("4_2snn4")
+HoverValues = Dictionary[String, Variant]({
+"position:x": 25.0
+})
+DefaultValues = Dictionary[String, Variant]({
+"position:x": 0.0
+})
+metadata/Description = "See your in game trophies."
+metadata/Disabled = false
+
+[node name="Action" type="Node" parent="ButtonsHandler/VBoxContainer/Trophies" unique_id=1112951341]
+script = ExtResource("40_vw3fn")
+
+[node name="Options" type="TextureButton" parent="ButtonsHandler" unique_id=1820021770 groups=["MenuButtons"]]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -293.0
+offset_top = -40.0
+offset_right = -70.0
+offset_bottom = 232.0
+grow_horizontal = 0
+scale = Vector2(0.5, 0.5)
+pivot_offset = Vector2(111.5, 110)
+texture_normal = ExtResource("10_lf5lq")
+texture_pressed = ExtResource("10_lf5lq")
+texture_hover = ExtResource("10_lf5lq")
+texture_disabled = ExtResource("10_lf5lq")
+script = ExtResource("4_2snn4")
+HoverValues = Dictionary[String, Variant]({
+"scale": Vector2(0.55, 0.55)
+})
+DefaultValues = Dictionary[String, Variant]({
+"scale": Vector2(0.5, 0.5)
+})
+metadata/Description = "Adjust some options."
+metadata/Disabled = false
+
+[node name="Action" type="Node" parent="ButtonsHandler/Options" unique_id=693548225]
+script = ExtResource("42_ug7od")
+
+[node name="Exit" type="TextureButton" parent="ButtonsHandler" unique_id=2138190340 groups=["MenuButtons"]]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -212.0
+offset_top = -83.0
+offset_right = 83.0
+offset_bottom = 353.0
+grow_horizontal = 0
+scale = Vector2(0.28, 0.28)
+pivot_offset = Vector2(147, 155)
+texture_normal = ExtResource("52_u01t2")
+texture_pressed = ExtResource("52_u01t2")
+texture_hover = ExtResource("52_u01t2")
+texture_disabled = ExtResource("52_u01t2")
+script = ExtResource("4_2snn4")
+HoverValues = Dictionary[String, Variant]({
+"scale": Vector2(0.33, 0.33)
+})
+DefaultValues = Dictionary[String, Variant]({
+"scale": Vector2(0.28, 0.28)
+})
+metadata/Description = "Exit the game."
+metadata/Disabled = false
+
+[node name="Action" type="Node" parent="ButtonsHandler/Exit" unique_id=1262964915]
+script = ExtResource("53_58u2v")
+
+[node name="ClickSFX" type="AudioStreamPlayer" parent="ButtonsHandler" unique_id=1658326856]
+stream = ExtResource("52_acc5a")
+
+[node name="HoverSFX" type="AudioStreamPlayer" parent="ButtonsHandler" unique_id=870793026]
+stream = ExtResource("39_obnb7")
+
+[node name="ErrorSFX" type="AudioStreamPlayer" parent="ButtonsHandler" unique_id=1441488789]
+stream = ExtResource("40_e3j4t")
+
+[node name="Label" type="Label" parent="." unique_id=237178950]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -49.0
+offset_top = -53.0
+offset_right = -9.0
+offset_bottom = -8.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 32

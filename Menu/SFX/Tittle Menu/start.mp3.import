@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://csg12a5ar22de"
+path="res://.godot/imported/start.mp3-125bd122d7e0f54d9937a16eebb4a88f.mp3str"
+
+[deps]
+
+source_file="res://Menu/SFX/Tittle Menu/start.mp3"
+dest_files=["res://.godot/imported/start.mp3-125bd122d7e0f54d9937a16eebb4a88f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

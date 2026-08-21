@@ -1,0 +1,472 @@
+[gd_scene format=3 uid="uid://h5cp45c654ot"]
+
+[ext_resource type="Script" uid="uid://bcuxwfjqbi7qh" path="res://Menu/Scripts/Campaign Menu/CampaignMenu.cs" id="1_kfl7n"]
+[ext_resource type="Texture2D" uid="uid://bejgd7ftbxc4s" path="res://Menu/Sprites/Tittle Menu/Background/4.png" id="1_t4cvq"]
+[ext_resource type="Texture2D" uid="uid://c6dikidbi5ift" path="res://Menu/Sprites/Tittle Menu/Background/6.png" id="2_s2dgl"]
+[ext_resource type="Shader" uid="uid://b0dgjpgmca0ck" path="res://Materials/Bright.gdshader" id="2_viyad"]
+[ext_resource type="Texture2D" uid="uid://bg1ftv7ydfvuf" path="res://Menu/Sprites/Tittle Menu/Background/10.png" id="3_5y58b"]
+[ext_resource type="Texture2D" uid="uid://dyvdmhff3gtcj" path="res://Menu/Sprites/Tittle Menu/Background/5.png" id="4_hgrub"]
+[ext_resource type="Texture2D" uid="uid://noccbro6qq6r" path="res://Menu/Sprites/Tittle Menu/Background/1.png" id="5_kfl7n"]
+[ext_resource type="Texture2D" uid="uid://dy4xyk8i5odvr" path="res://Menu/Sprites/Tittle Menu/Background/8.png" id="6_4yfre"]
+[ext_resource type="Texture2D" uid="uid://lr6op0mklk5b" path="res://Menu/Sprites/Tittle Menu/Background/2.png" id="7_jfa51"]
+[ext_resource type="Texture2D" uid="uid://cl2k78apl55aw" path="res://Menu/Sprites/Tittle Menu/Background/7.png" id="8_viyad"]
+[ext_resource type="Texture2D" uid="uid://gnv2ak2cnaqf" path="res://Menu/Sprites/Tittle Menu/Background/9.png" id="9_sekhd"]
+[ext_resource type="Texture2D" uid="uid://cvwya4i4wjgna" path="res://Menu/Sprites/Tittle Menu/Background/3.png" id="10_ta66l"]
+[ext_resource type="Texture2D" uid="uid://ch88mrsg1cdgf" path="res://Menu/Sprites/Campaign Menu/Gradient.svg" id="11_oj7iy"]
+[ext_resource type="Texture2D" uid="uid://078oei2v1oka" path="res://Menu/Sprites/Campaign Menu/Mike/redmike1.svg" id="12_27wm3"]
+[ext_resource type="Script" uid="uid://d32tvek7jdk11" path="res://Menu/Scripts/General/RedBackground.cs" id="12_jfa51"]
+[ext_resource type="Texture2D" uid="uid://0oulaud8a4dl" path="res://Menu/Sprites/Campaign Menu/ActEpisode/ACT1D.svg" id="13_hgrub"]
+[ext_resource type="Texture2D" uid="uid://iiwla7w2sh50" path="res://Menu/Sprites/Campaign Menu/Mike/redmike2.svg" id="13_tpqbx"]
+[ext_resource type="Texture2D" uid="uid://bsmgbwegu0o50" path="res://Menu/Sprites/Campaign Menu/Mike/redmike3.svg" id="14_c0skb"]
+[ext_resource type="Texture2D" uid="uid://bwpnt0ikq1p6s" path="res://Menu/Sprites/Campaign Menu/Mike/redmike4.svg" id="15_ckrgn"]
+[ext_resource type="Script" uid="uid://dx70g81qd2ugg" path="res://Menu/Scripts/Campaign Menu/Stage.cs" id="16_mxmyw"]
+[ext_resource type="Texture2D" uid="uid://c012bp8p1w51q" path="res://Menu/Sprites/Campaign Menu/Decoration.svg" id="16_oj7iy"]
+[ext_resource type="Script" uid="uid://c3mqsn64xw7he" path="res://Menu/Scripts/Campaign Menu/StageSelectedChecker.cs" id="17_27wm3"]
+[ext_resource type="Script" uid="uid://d0d0hwsjpr5k8" path="res://Menu/Scripts/General/ButtonsHandler.cs" id="17_tpqbx"]
+[ext_resource type="Texture2D" uid="uid://dl6budlom1wfa" path="res://Menu/Sprites/Campaign Menu/Button.svg" id="18_c0skb"]
+[ext_resource type="Texture2D" uid="uid://dl7jvbrdpyuek" path="res://Menu/Sprites/Campaign Menu/black.svg" id="18_hgrub"]
+[ext_resource type="Script" uid="uid://clnn3xsg84pvx" path="res://Menu/Scripts/Campaign Menu/StageConfig.cs" id="18_tpqbx"]
+[ext_resource type="Texture2D" uid="uid://dt2plbgs445xm" path="res://Menu/Sprites/Campaign Menu/ActEpisode/ACT1A.svg" id="18_ujxie"]
+[ext_resource type="Script" uid="uid://q888oofyn36c" path="res://Menu/Scripts/General/GenericUIAnimation.cs" id="19_tpqbx"]
+[ext_resource type="Texture2D" uid="uid://crw5hu2v2vexb" path="res://Menu/Sprites/Campaign Menu/ActEpisode/ACT1N.svg" id="19_v6rfu"]
+[ext_resource type="FontFile" uid="uid://cief05lqa4qc2" path="res://Fonts/impact.ttf" id="20_4yfre"]
+[ext_resource type="Script" uid="uid://bsa3csaeq4ar8" path="res://Menu/Scripts/Campaign Menu/Buttons Actions/BackCMAction.cs" id="20_ckrgn"]
+[ext_resource type="Script" uid="uid://d0noqhokxqhds" path="res://Menu/Scripts/Campaign Menu/Buttons Actions/AdvanceAction.cs" id="21_kjfl6"]
+[ext_resource type="AudioStream" uid="uid://d1fbdphn52exi" path="res://Menu/SFX/Main Menu/click.ogg" id="22_jjj4g"]
+[ext_resource type="AudioStream" uid="uid://ckqvptgwlijas" path="res://Menu/SFX/Main Menu/hover.ogg" id="23_mxmyw"]
+[ext_resource type="AudioStream" uid="uid://da6146rcprxt" path="res://Menu/SFX/Main Menu/error.ogg" id="24_kwh8v"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_sekhd"]
+shader = ExtResource("2_viyad")
+shader_parameter/bright = 4.7499999933364734e-08
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_kjfl6"]
+frames = 10
+frame_0/texture = ExtResource("1_t4cvq")
+frame_0/duration = 0.1
+frame_1/texture = ExtResource("2_s2dgl")
+frame_1/duration = 0.1
+frame_2/texture = ExtResource("3_5y58b")
+frame_2/duration = 0.1
+frame_3/texture = ExtResource("4_hgrub")
+frame_3/duration = 0.1
+frame_4/texture = ExtResource("5_kfl7n")
+frame_4/duration = 0.1
+frame_5/texture = ExtResource("6_4yfre")
+frame_5/duration = 0.1
+frame_6/texture = ExtResource("7_jfa51")
+frame_6/duration = 0.1
+frame_7/texture = ExtResource("8_viyad")
+frame_7/duration = 0.1
+frame_8/texture = ExtResource("9_sekhd")
+frame_8/duration = 0.1
+frame_9/texture = ExtResource("10_ta66l")
+frame_9/duration = 0.1
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_c0skb"]
+shader = ExtResource("2_viyad")
+shader_parameter/bright = 0.0
+
+[sub_resource type="InputEventKey" id="InputEventKey_27wm3"]
+device = -1
+keycode = 4194319
+
+[sub_resource type="Shortcut" id="Shortcut_tpqbx"]
+events = [SubResource("InputEventKey_27wm3")]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_tpqbx"]
+shader = ExtResource("2_viyad")
+shader_parameter/bright = 0.0
+
+[sub_resource type="InputEventKey" id="InputEventKey_c0skb"]
+device = -1
+keycode = 4194321
+
+[sub_resource type="Shortcut" id="Shortcut_ckrgn"]
+events = [SubResource("InputEventKey_c0skb")]
+
+[sub_resource type="Resource" id="Resource_mxmyw"]
+script = ExtResource("18_tpqbx")
+Thumbnail = ExtResource("13_hgrub")
+metadata/_custom_type_script = "uid://clnn3xsg84pvx"
+
+[sub_resource type="Resource" id="Resource_v6q56"]
+script = ExtResource("18_tpqbx")
+Thumbnail = ExtResource("18_ujxie")
+Episode = 1
+metadata/_custom_type_script = "uid://clnn3xsg84pvx"
+
+[sub_resource type="Resource" id="Resource_igcpa"]
+script = ExtResource("18_tpqbx")
+Thumbnail = ExtResource("19_v6rfu")
+Episode = 2
+metadata/_custom_type_script = "uid://clnn3xsg84pvx"
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_1rcqr"]
+frames = 4
+frame_0/texture = ExtResource("12_27wm3")
+frame_0/duration = 0.1
+frame_1/texture = ExtResource("13_tpqbx")
+frame_1/duration = 0.1
+frame_2/texture = ExtResource("14_c0skb")
+frame_2/duration = 0.1
+frame_3/texture = ExtResource("15_ckrgn")
+frame_3/duration = 0.1
+
+[sub_resource type="Animation" id="Animation_hgrub"]
+resource_name = "In"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Black1:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [-260.0, -835.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Black2:position:x")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [260.0, 835.0]
+}
+
+[sub_resource type="Animation" id="Animation_4yfre"]
+resource_name = "Out"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Black1:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [-835.0, -260.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Black2:position:x")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [835.0, 260.0]
+}
+
+[sub_resource type="Animation" id="Animation_kfl7n"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Black1:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [-835.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Black2:position:x")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [835.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Stage:position:x")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [594.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_4yfre"]
+_data = {
+&"In": SubResource("Animation_hgrub"),
+&"Out": SubResource("Animation_4yfre"),
+&"RESET": SubResource("Animation_kfl7n")
+}
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_jjj4g"]
+animation = &"In"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_mxmyw"]
+animation = &"Out"
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_kwh8v"]
+states/In/node = SubResource("AnimationNodeAnimation_jjj4g")
+states/In/position = Vector2(413, 54)
+states/Out/node = SubResource("AnimationNodeAnimation_mxmyw")
+states/Out/position = Vector2(416, 159)
+
+[node name="CampaignMenu" type="Control" unique_id=862469573 node_paths=PackedStringArray("_AnimationTree", "_StageSelectedChecker")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_kfl7n")
+_AnimationTree = NodePath("AnimationTree")
+_StageSelectedChecker = NodePath("StageSelectedChecker")
+
+[node name="Background" type="TextureRect" parent="." unique_id=1607075361]
+material = SubResource("ShaderMaterial_sekhd")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("AnimatedTexture_kjfl6")
+script = ExtResource("12_jfa51")
+ColorsBright = Dictionary[int, float]({
+0: 0.0,
+1: -0.5,
+2: -0.8
+})
+
+[node name="Gradient" type="TextureRect" parent="." unique_id=33206276]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -40.0
+offset_right = 38.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("11_oj7iy")
+
+[node name="Stage" type="TextureRect" parent="." unique_id=52026160 node_paths=PackedStringArray("_buttons")]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -46.0
+offset_top = -291.5
+offset_right = 46.0
+offset_bottom = -236.5
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(3.8, 3.8)
+pivot_offset = Vector2(46, 0)
+texture = ExtResource("16_oj7iy")
+script = ExtResource("16_mxmyw")
+_StageTextures = Array[Texture2D]([ExtResource("13_hgrub"), ExtResource("18_ujxie"), ExtResource("19_v6rfu")])
+_buttons = [NodePath("../ButtonsHandler/HBoxContainer/BackCMButton"), NodePath("../ButtonsHandler/HBoxContainer/AdvanceButton")]
+
+[node name="ActEpisode" type="TextureRect" parent="Stage" unique_id=298863325]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -332.5
+offset_top = -24.5
+offset_right = 530.5
+offset_bottom = 485.5
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.095, 0.095)
+pivot_offset = Vector2(322, 0)
+texture = ExtResource("13_hgrub")
+
+[node name="ButtonsHandler" type="Control" parent="." unique_id=1451317146 node_paths=PackedStringArray("_clickSFX", "_hoverSFX", "_errorSFX")]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("17_tpqbx")
+_clickSFX = NodePath("ClickSFX")
+_hoverSFX = NodePath("HoverSFX")
+_errorSFX = NodePath("ErrorSFX")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ButtonsHandler" unique_id=1200964335]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -65.99994
+offset_top = -258.99997
+offset_right = 66.00006
+offset_bottom = -218.99997
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(3.7, 3.7)
+pivot_offset = Vector2(68, 0)
+theme_override_constants/separation = 105
+
+[node name="BackCMButton" type="TextureButton" parent="ButtonsHandler/HBoxContainer" unique_id=1809255503 groups=["MenuButtons"]]
+material = SubResource("ShaderMaterial_c0skb")
+layout_mode = 2
+focus_mode = 0
+shortcut = SubResource("Shortcut_tpqbx")
+shortcut_in_tooltip = false
+texture_normal = ExtResource("18_c0skb")
+texture_pressed = ExtResource("18_c0skb")
+texture_hover = ExtResource("18_c0skb")
+flip_h = true
+script = ExtResource("19_tpqbx")
+Duration = 0.05
+HoverValues = Dictionary[String, Variant]({
+"material:shader_parameter/bright": 0.15
+})
+DefaultValues = Dictionary[String, Variant]({
+"material:shader_parameter/bright": 0.0
+})
+metadata/Disabled = false
+
+[node name="Action" type="Node" parent="ButtonsHandler/HBoxContainer/BackCMButton" unique_id=149882024 node_paths=PackedStringArray("_stage")]
+script = ExtResource("20_ckrgn")
+_stage = NodePath("../../../../Stage")
+
+[node name="AdvanceButton" type="TextureButton" parent="ButtonsHandler/HBoxContainer" unique_id=1175572064 groups=["MenuButtons"]]
+material = SubResource("ShaderMaterial_tpqbx")
+layout_mode = 2
+focus_mode = 0
+shortcut = SubResource("Shortcut_ckrgn")
+shortcut_in_tooltip = false
+texture_normal = ExtResource("18_c0skb")
+texture_pressed = ExtResource("18_c0skb")
+texture_hover = ExtResource("18_c0skb")
+script = ExtResource("19_tpqbx")
+Duration = 0.05
+HoverValues = Dictionary[String, Variant]({
+"material:shader_parameter/bright": 0.15
+})
+DefaultValues = Dictionary[String, Variant]({
+"material:shader_parameter/bright": 0.0
+})
+metadata/Disabled = false
+
+[node name="Action" type="Node" parent="ButtonsHandler/HBoxContainer/AdvanceButton" unique_id=574963954 node_paths=PackedStringArray("_stage")]
+script = ExtResource("21_kjfl6")
+_stage = NodePath("../../../../Stage")
+
+[node name="ClickSFX" type="AudioStreamPlayer" parent="ButtonsHandler" unique_id=1747038219]
+stream = ExtResource("22_jjj4g")
+
+[node name="HoverSFX" type="AudioStreamPlayer" parent="ButtonsHandler" unique_id=836962480]
+stream = ExtResource("23_mxmyw")
+
+[node name="ErrorSFX" type="AudioStreamPlayer" parent="ButtonsHandler" unique_id=1030480072]
+stream = ExtResource("24_kwh8v")
+
+[node name="StageSelectedChecker" type="Node" parent="." unique_id=122977337 node_paths=PackedStringArray("_StageInfoPanel")]
+script = ExtResource("17_27wm3")
+_StageInfoPanel = NodePath("../Stage/ActEpisode")
+_Stages = Array[Object]([SubResource("Resource_mxmyw"), SubResource("Resource_v6q56"), SubResource("Resource_igcpa")])
+
+[node name="Mike" type="TextureRect" parent="." unique_id=963520631]
+modulate = Color(1.8247963, 1.8247963, 1.8247963, 1)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -220.0
+offset_top = -364.0
+offset_right = 108.0
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(1.1, 1.1)
+pivot_offset = Vector2(0, 364)
+texture = SubResource("AnimatedTexture_1rcqr")
+
+[node name="Label" type="Label" parent="." unique_id=1376063714]
+modulate = Color(0.7882353, 0.30980393, 0.43529412, 1)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -197.0
+offset_top = -110.0
+offset_right = 197.0
+offset_bottom = -50.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("20_4yfre")
+theme_override_font_sizes/font_size = 48
+text = "Press ENTER to start."
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="." unique_id=64285603]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -143.0
+offset_top = -50.0
+offset_right = 143.0
+offset_bottom = -17.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("20_4yfre")
+theme_override_font_sizes/font_size = 26
+text = "Press BACKSPACE to return."
+horizontal_alignment = 1
+
+[node name="Black1" type="TextureRect" parent="." unique_id=427948701]
+layout_mode = 0
+offset_left = -835.0
+offset_right = 445.0
+offset_bottom = 720.0
+mouse_filter = 2
+texture = ExtResource("18_hgrub")
+
+[node name="Black2" type="TextureRect" parent="." unique_id=1316116016]
+layout_mode = 0
+offset_left = 835.0
+offset_right = 2115.0
+offset_bottom = 720.0
+mouse_filter = 2
+texture = ExtResource("18_hgrub")
+flip_h = true
+flip_v = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1722704902]
+libraries/ = SubResource("AnimationLibrary_4yfre")
+
+[node name="AnimationTree" type="AnimationTree" parent="." unique_id=903300431]
+tree_root = SubResource("AnimationNodeStateMachine_kwh8v")
+anim_player = NodePath("../AnimationPlayer")

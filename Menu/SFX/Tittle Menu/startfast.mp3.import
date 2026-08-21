@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cysy7f6mbrw6j"
+path="res://.godot/imported/startfast.mp3-1d924157c44e2e14bbc82151d499f79d.mp3str"
+
+[deps]
+
+source_file="res://Menu/SFX/Tittle Menu/startfast.mp3"
+dest_files=["res://.godot/imported/startfast.mp3-1d924157c44e2e14bbc82151d499f79d.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

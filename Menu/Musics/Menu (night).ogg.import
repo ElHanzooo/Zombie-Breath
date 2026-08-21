@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b2yyxggbvwts0"
+path="res://.godot/imported/Menu (night).ogg-3f90b7ecc17bed9750277d7080edb9d4.oggvorbisstr"
+
+[deps]
+
+source_file="res://Menu/Musics/Menu (night).ogg"
+dest_files=["res://.godot/imported/Menu (night).ogg-3f90b7ecc17bed9750277d7080edb9d4.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

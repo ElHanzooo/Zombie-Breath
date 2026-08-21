@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://cwdgmonw5g02n"]
+
+[ext_resource type="AudioStream" uid="uid://w3dyu1m1l6a8" path="res://Menu/Musics/ZB menu.mp3" id="1_b54ht"]
+[ext_resource type="Script" uid="uid://bn1ca7rfws6i7" path="res://Menu/Scripts/Global/MenuMusicPlayer.cs" id="2_wkw2y"]
+[ext_resource type="AudioStream" uid="uid://b2yyxggbvwts0" path="res://Menu/Musics/Menu (night).ogg" id="3_k03p2"]
+
+[node name="MenuMusicPlayer" type="AudioStreamPlayer" unique_id=592448170]
+stream = ExtResource("1_b54ht")
+volume_db = -3.0
+parameters/looping = true
+script = ExtResource("2_wkw2y")
+MusicTracks = Dictionary[int, AudioStream]({
+0: ExtResource("1_b54ht"),
+1: ExtResource("1_b54ht"),
+2: ExtResource("3_k03p2")
+})

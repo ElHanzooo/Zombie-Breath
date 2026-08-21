@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cxuy5qbjm8e2a"
+path="res://.godot/imported/ZB menu fim.mp3-ab53255119aea75ca845984d79a74e58.mp3str"
+
+[deps]
+
+source_file="res://Menu/Musics/ZB menu fim.mp3"
+dest_files=["res://.godot/imported/ZB menu fim.mp3-ab53255119aea75ca845984d79a74e58.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
