@@ -3,6 +3,7 @@ using System;
 
 public partial class Shoot : State
 {
+    [Export] private AnimationManager AnimationManager { get; set; }
     [Export] private State IdleState { get; set; }
 
     private AnimatedSprite2D animations;
@@ -14,5 +15,5 @@ public partial class Shoot : State
         animations.AnimationFinished += () => EmitSignal(SignalName.SwitchState, IdleState);
     }
 
-    public override void Enter() => animations.Play("Shoot");
+    public override void Enter() => AnimationManager.AddAnimation("Shoot", GD.Load<AudioStream>("res://Characters/Mike/Assets/Sound Effects/Shoot.ogg"));
 }
