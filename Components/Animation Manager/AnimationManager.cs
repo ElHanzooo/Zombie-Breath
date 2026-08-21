@@ -2,6 +2,7 @@ using Godot;
 using System;
 using System.Collections.Generic;
 
+[GlobalClass]
 public partial class AnimationManager : Node
 {
     [Export] public string StandardAnimation { get; set; }
