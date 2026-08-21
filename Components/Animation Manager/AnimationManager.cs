@@ -5,8 +5,8 @@ using System.Collections.Generic;
 [GlobalClass]
 public partial class AnimationManager : Node
 {
-    [Export] public string StandardAnimation { get; set; }
-    [Export] private AnimatedSprite2D AnimatedSprite2DNode { get; set; }
+    [Export] public string StandardAnimation { get; set; } = string.Empty;
+    [Export] private AnimatedSprite2D AnimatedSprite2DNode { get; set; } = null!;
 
     private readonly Stack<(string animation, AudioStream? audio)> animations = new();
 
