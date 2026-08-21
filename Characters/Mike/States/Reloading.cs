@@ -3,6 +3,7 @@ using System;
 
 public partial class Reloading : State
 {
+    [Export] private AnimationManager AnimationManager { get; set; }
     [Export] private State IdleState { get; set; }
 
     private AnimatedSprite2D animations;
@@ -14,10 +15,5 @@ public partial class Reloading : State
         animations.AnimationFinished += () => EmitSignal(SignalName.SwitchState, IdleState);
     }
 
-    public override void Enter()
-    {
-        animations.Play("Reloading");
-
-        Global.Instance.PlaySoundEffect(GD.Load<AudioStream>("res://Characters/Mike/Assets/Sound Effects/Reloading.ogg"));
-    }
+    public override void Enter() => AnimationManager.AddAnimation("Reloading", GD.Load<AudioStream>("res://Characters/Mike/Assets/Sound Effects/Reloading.ogg"));
 }
