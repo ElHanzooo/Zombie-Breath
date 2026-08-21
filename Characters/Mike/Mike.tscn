@@ -195,7 +195,8 @@ AnimationManager = NodePath("../../AnimationManager")
 IdleState = NodePath("../Idle")
 metadata/_custom_type_script = "uid://blke3331gy4k3"
 
-[node name="Hit" type="Node" parent="FiniteStateMachine" unique_id=1461931522 node_paths=PackedStringArray("IdleState")]
+[node name="Hit" type="Node" parent="FiniteStateMachine" unique_id=1461931522 node_paths=PackedStringArray("AnimationManager", "IdleState")]
 script = ExtResource("33_ptsro")
+AnimationManager = NodePath("../../AnimationManager")
 IdleState = NodePath("../Idle")
 metadata/_custom_type_script = "uid://blke3331gy4k3"
