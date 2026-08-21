@@ -17,7 +17,7 @@ public partial class AnimationManager : Node
         PlayAnimation();
     }
 
-    public void AddAnimation(string animation, AudioStream? audio)
+    public void AddAnimation(string animation, AudioStream? audio = null)
     {
         animations.Push((animation, audio));
 
