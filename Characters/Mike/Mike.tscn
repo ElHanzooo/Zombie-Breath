@@ -185,16 +185,22 @@ AnimationManager = NodePath("../../AnimationManager")
 ShootState = NodePath("../Shoot")
 ReloadingState = NodePath("../Reloading")
 
-[node name="Shoot" type="Node" parent="FiniteStateMachine" unique_id=1007972517 node_paths=PackedStringArray("AnimationManager")]
+[node name="Shoot" type="Node" parent="FiniteStateMachine" unique_id=1007972517 node_paths=PackedStringArray("Mike", "AnimationManager", "IdleState")]
 script = ExtResource("31_u53qn")
+Mike = NodePath("../..")
 AnimationManager = NodePath("../../AnimationManager")
+IdleState = NodePath("../Idle")
 
-[node name="Reloading" type="Node" parent="FiniteStateMachine" unique_id=1098283542 node_paths=PackedStringArray("AnimationManager")]
+[node name="Reloading" type="Node" parent="FiniteStateMachine" unique_id=1098283542 node_paths=PackedStringArray("Mike", "AnimationManager", "IdleState")]
 script = ExtResource("32_e0l64")
+Mike = NodePath("../..")
 AnimationManager = NodePath("../../AnimationManager")
+IdleState = NodePath("../Idle")
 metadata/_custom_type_script = "uid://blke3331gy4k3"
 
-[node name="Hit" type="Node" parent="FiniteStateMachine" unique_id=1461931522 node_paths=PackedStringArray("AnimationManager")]
+[node name="Hit" type="Node" parent="FiniteStateMachine" unique_id=1461931522 node_paths=PackedStringArray("Mike", "AnimationManager", "IdleState")]
 script = ExtResource("33_ptsro")
+Mike = NodePath("../..")
 AnimationManager = NodePath("../../AnimationManager")
+IdleState = NodePath("../Idle")
 metadata/_custom_type_script = "uid://blke3331gy4k3"

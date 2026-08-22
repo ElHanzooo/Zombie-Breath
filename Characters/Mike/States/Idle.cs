@@ -9,8 +9,6 @@ public partial class Idle : State
     [Export] private State ShootState { get; set; } = null!;
     [Export] private State ReloadingState { get; set; } = null!;
 
-    public override void Enter() => AnimationManager.AddAnimation("Idle");
-
     public override void Update(double delta)
     {
         if (Input.IsActionJustPressed("Shoot"))
